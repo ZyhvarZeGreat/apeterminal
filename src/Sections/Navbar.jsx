@@ -1,6 +1,7 @@
 import React from "react";
 import logo from '../assets/logo.svg'
 import navArrow from '../assets/navArrow.svg'
+import { Link } from "react-router-dom";
 const Navbar = () => {
     return (
         <>
@@ -19,7 +20,7 @@ const Navbar = () => {
                     <div className="MuiBox-root css-domuav">
                         <div className="d-menu-outer-item" style={{ textDecoration: 'none', position: 'relative' }}>
                             <button className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-fdsvhp" tabIndex="0" type="button">
-                                <p className="MuiTypography-root MuiTypography-body1 css-a3lrct">About</p>
+                                <Link to='/about' className="MuiTypography-root MuiTypography-body1 css-a3lrct">About</Link>
                                 <span className="MuiTouchRipple-root css-w0pj6f"></span>
                             </button>
                             <div className="d-menu-inner-item hidden">
@@ -32,19 +33,19 @@ const Navbar = () => {
                         </div>
                         <div className="d-menu-outer-item" style={{ textDecoration: 'none', position: 'relative' }}>
                             <button className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-9dm9ux" tabIndex="0" type="button">
-                                <p className="MuiTypography-root MuiTypography-body1 css-1h5ecr">Launchpad</p>
+                                <Link to='/' className="MuiTypography-root MuiTypography-body1 css-1h5ecr">Launchpad</Link>
                                 <span className="MuiTouchRipple-root css-w0pj6f"></span>
                             </button>
                         </div>
                         <div className="d-menu-outer-item" style={{ textDecoration: 'none', position: 'relative' }}>
                             <button className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-fdsvhp" tabIndex="0" type="button">
-                                <p className="MuiTypography-root MuiTypography-body1 css-a3lrct">Transparency</p>
+                                <Link to='/transparency' className="MuiTypography-root MuiTypography-body1 css-a3lrct">Transparency</Link>
                                 <span className="MuiTouchRipple-root css-w0pj6f"></span>
                             </button>
                         </div>
                         <div className="d-menu-outer-item" style={{ textDecoration: 'none', position: 'relative' }}>
                             <button className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-fdsvhp" tabIndex="0" type="button">
-                                <p className="MuiTypography-root MuiTypography-body1 css-a3lrct">Ape Activator</p>
+                                <Link to='/activator' className="MuiTypography-root MuiTypography-body1 css-a3lrct">Ape Activator</Link>
                                 <span className="MuiTouchRipple-root css-w0pj6f"></span>
                             </button>
                         </div>

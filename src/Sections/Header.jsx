@@ -19,7 +19,7 @@ const Header = () => {
     return (
         <>
 
-            <div className="MuiBox-root css-ohwg9z">
+            <div className="MuiBox-root  css-ohwg9z">
                 <div className="rive-lines">
                     <span className="in-view" style={{ display: 'block', height: '100%', width: '100%', opacity: 1, transform: 'none' }}>
                         <div className="rive-lines__inner" style={{ position: 'absolute', top: 0, left: 0, width: '100%', userSelect: 'none', zIndex: 1, opacity: 0.6, aspectRatio: '16 / 10' }}>
@@ -44,7 +44,7 @@ const Header = () => {
                         </div>
                     </span>
                 </div>
-                <div className="MuiBox-root css-0" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', width: '100%', zIndex: 1, position: 'absolute', top: '32%' }}>
+                <div className="MuiBox-root  css-0" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', width: '100%', zIndex: 1, position: 'absolute', top: '32%' }}>
                     <div className="MuiBox-root css-1316xsb">
                         <p className="MuiTypography-root MuiTypography-body1 css-84aoz6">
                             <span className="in-view opacity-100 filter-none transform-none">
