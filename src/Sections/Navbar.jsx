@@ -13,9 +13,9 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="MuiGrid-root MuiGrid-container css-1js5ylb">
-                <div className="MuiBox-root css-l5nz00">
-                    <div className="MuiBox-root bg css-1bcs68t">
-                        <img src={logo} alt="logo" width="130" height="40" />
+                <div className="MuiBox-root  css-l5nz00">
+                    <div className="MuiBox-root h-auto  ">
+                        <img src={logo} alt="logo" className="w-[130px] h-[40px]" />
                     </div>
                     <div className="MuiBox-root css-domuav">
                         <div className="d-menu-outer-item" style={{ textDecoration: 'none', position: 'relative' }}>

@@ -1,14 +1,45 @@
 import React from 'react'
 import './Retail.css'
+import about_icon from '../assets/About/icon-about.svg'
+import efficient from '../assets/About/efficient.svg'
+import none from '../assets/About/icon-none.svg'
+import verify from '../assets/About/verify.svg'
+import together from '../assets/About/strong-apes-tgoether-background.png'
+import cta1 from '../assets/About/cta-1.png'
+import cta2 from '../assets/About/cta-2.png'
+import cta3 from '../assets/About/cta-3.png'
+import glowGreen from '../assets/About/glow-green.png'
+import glowBlue from '../assets/About/glow-blue.png'
+import iconUserRapidly from '../assets/About/icon-user-rapidly.svg'
+import rapidContent from '../assets/About/image-rapidly-content.png'
+import Graphic from '../assets/About/Graphic.png'
+import launchIcon from '../assets/About/icon-ape-launchpad.svg'
+import readMore from '../assets/About/button-read-more.svg'
+import quarterly from '../assets/About/image-quarterly.png'
+import switchPink from '../assets/About/icon-switch-pink.svg'
+import okPink from '../assets/About/icon-ok-pink.svg'
+import questionPink from '../assets/About/increased-question-launchpad.svg'
+import roi from '../assets/About/roi.svg'
+import rocket from '../assets/About/rocket.svg'
+import marketCap from '../assets/About/market-cap.svg'
+import ok from '../assets/About/ok.svg'
+import trading from '../assets/About/trading.svg'
+import iconX from '../assets/About/icon-x (1).svg'
+import iconTelegram from '../assets/About/icon-telegram (1).svg'
+import arrowDown from '../assets/About/footer-arrow (1).svg'
+import logo from '../assets/logo.svg'
+import AboutHeader from '../Sections/AboutHeader'
+
 const Web2Retail = () => {
     return (
-        <div>
-            <div className="ape2">
+        <div className={`  bg-[url(https://www.apeterminal.io/activator/assets/images/background.png)] bg-no-repeat bg-contain bg-top`}>
+            <AboutHeader />
+            <div className="ape2 max-w-full">
 
                 <div className="header-about">
                     <div className="box-content-header">
                         <div className="box-about-pes">
-                            <img src="assets/images/about/icon-about.svg" alt="About Apes Icon" />
+                            <img src={about_icon} alt="About Apes Icon" />
                             <p className="ape-about-apes">About Apes</p>
                         </div>
                         <div className="box-ape-terminal">
@@ -17,15 +48,15 @@ const Web2Retail = () => {
                         </div>
                         <div className="box-list-item-ape-terminal">
                             <a className="ape-terminal-item">
-                                <img src="assets/images/about/efficient.svg" alt="Zero Upfront Costs" />
+                                <img src={efficient} alt="Zero Upfront Costs" />
                                 <p className="label-zero">Zero Upfront Costs</p>
                             </a>
                             <a className="ape-terminal-item-green">
-                                <img src="assets/images/about/icon-none.svg" alt="Non-Token Gated" />
+                                <img src={none} alt="Non-Token Gated" />
                                 <p className="label-non">Non-Token Gated</p>
                             </a>
                             <a className="ape-terminal-item">
-                                <img src="assets/images/about/verify.svg" alt="No KYC Required" />
+                                <img src={verify} alt="No KYC Required" />
                                 <p className="label-no">No KYC Required</p>
                             </a>
                         </div>
@@ -36,30 +67,30 @@ const Web2Retail = () => {
                         <a href="https://www.apeterminal.io/" className="button-started">Get Started</a>
                     </div>
                 </div>
-                <div className="featured-cta">
-                    <img src="assets/images/strong-apes-tgoether-background.png" alt="strong apes together" className="strongapes strongapes2" />
-                    <div className="box-cta-info container">
+                <div className="featured-cta max-w-[1200px] mx-auto  ">
+                    <img src={together} alt="strong apes together" className="strongapes  max-w-[200%]  strongapes2" />
+                    <div className="box-cta-info max-w-[1200px] container">
                         <p className="value-user-join">
                             <span className="value-customers">Join 500,000+ Users</span>
                         </p>
                         <p className="des-value-user">Accessing the Industry's Highest ROI Sales</p>
                         <div className="featured-cta-container">
                             <div className="featured-cta-item">
-                                <img src="assets/images/about/cta-1.png" alt="Assets Connected" />
+                                <img src={cta1} alt="Assets Connected" />
                                 <div className="box-info-item">
                                     <p className="value">$1,756,581,920+</p>
                                     <p className="des-value-assets des-value">Assets Connected</p>
                                 </div>
                             </div>
                             <div className="featured-cta-item">
-                                <img src="assets/images/about/cta-2.png" alt="Average ROI" />
+                                <img src={cta2} alt="Average ROI" />
                                 <div className="box-info-item">
                                     <p className="value">1,300%</p>
                                     <p className="des-value-average des-value">Average ROI</p>
                                 </div>
                             </div>
                             <div className="featured-cta-item">
-                                <img src="assets/images/about/cta-3.png" alt="Countries" />
+                                <img src={cta3} alt="Countries" />
                                 <div className="box-info-item-left">
                                     <p className="value">50+</p>
                                     <p className="des-value-countries des-value">Countries</p>
@@ -68,13 +99,13 @@ const Web2Retail = () => {
                         </div>
                     </div>
                 </div>
-                <div className="featured-rapidly container">
+                <div className="featured-rapidly max-w-[1200px] container">
                     <div className="box-info-rapidly">
-                        <img className="image-glow" src="assets/images/glow-green.png" alt="Glow" />
+                        <img className="image-glow" src={glowGreen} alt="Glow" />
                         <div className="info-rapidly">
                             <div className="box-user">
                                 <div className="content-user">
-                                    <img src="assets/images/about/icon-user-rapidly.svg" alt="Userbase Icon" />
+                                    <img src={iconUserRapidly} alt="Userbase Icon" />
                                     <span className="label-user">Userbase</span>
                                 </div>
                             </div>
@@ -88,11 +119,11 @@ const Web2Retail = () => {
                             </p>
                         </div>
                         <div className="image-rapidly">
-                            <img src="assets/images/about/image-rapidly-content.png" alt="Rapid Growth" />
+                            <img src={rapidContent} alt="Rapid Growth" />
                         </div>
                     </div>
                 </div>
-                <div className="featured-ape-questions-launchpads container">
+                <div className="featured-ape-questions-launchpads max-w-[1200px] container">
                     <div className="box-content-launchpad">
                         <h1>
                             What are Launchpads?
@@ -104,7 +135,7 @@ const Web2Retail = () => {
                         <div className="card-item">
                             <div className="card-icon">
                                 <div className="card-image">
-                                    <img src="assets/images/about/icon-ok-pink.svg" alt="Guaranteed Returns" />
+                                    <img src={okPink} alt="Guaranteed Returns" />
                                 </div>
                             </div>
                             <div className="box-content-card">
@@ -116,7 +147,7 @@ const Web2Retail = () => {
                         <div className="card-item card-item-seconds">
                             <div className="card-icon">
                                 <div className="card-image">
-                                    <img src="assets/images/about/increased-question-launchpad.svg" alt="Increased Success Rate" />
+                                    <img src={questionPink} alt="Increased Success Rate" />
                                 </div>
                             </div>
                             <div className="box-content-card">
@@ -128,7 +159,7 @@ const Web2Retail = () => {
                         <div className="card-item">
                             <div className="card-icon">
                                 <div className="card-image">
-                                    <img src="assets/images/about/icon-switch-pink.svg" alt="Aligned Incentives" />
+                                    <img src={switchPink} alt="Aligned Incentives" />
                                 </div>
                             </div>
                             <div className="box-content-card">
@@ -138,17 +169,17 @@ const Web2Retail = () => {
                         </div>
                     </div>
                 </div>
-                <div className="featured-ape-launchpad container whyapeterminal">
-                    <img className="blurbackleft" src="assets/images/glow-blue.png" alt="Glow" />
+                <div className="featured-ape-launchpad max-w-[1200px] container whyapeterminal">
+                    <img className="blurbackleft" src={glowBlue} alt="Glow" />
                     <div className="box-info-launchpad">
                         <div className="image-launchpad">
-                            <img src="assets/images/about/Graphic.png" alt="Graphic" />
+                            <img src={Graphic} alt="Graphic" />
                         </div>
                         <img className="image-glow-ape-launchpad" src="assets/images/about/glow-ape-launchpad.png" alt="Glow Ape Launchpad" />
                         <div className="info-launchpad">
                             <div className="box-user">
                                 <div className="content-user">
-                                    <img src="assets/images/about/icon-ape-launchpad.svg" alt="Ape Launchpad Icon" />
+                                    <img src={launchIcon} alt="Ape Launchpad Icon" />
                                     <span className="label-user">Ape Launchpad</span>
                                 </div>
                             </div>
@@ -162,12 +193,12 @@ const Web2Retail = () => {
                         </div>
                     </div>
                 </div>
-                <div className="featured-ape-card container">
+                <div className="featured-ape-card max-w-[1200px] container">
                     <div className="card-grid">
                         <div className="card">
                             <div className="card-icon">
                                 <div className="card-image">
-                                    <img src="assets/images/about/market-cap.svg" alt="Market Cap" />
+                                    <img src={marketCap} alt="Market Cap" />
                                 </div>
                             </div>
                             <h3>Highest ROI Sales</h3>
@@ -176,7 +207,7 @@ const Web2Retail = () => {
                         <div className="card">
                             <div className="card-icon">
                                 <div className="card-image">
-                                    <img src="assets/images/about/ok.svg" alt="Non-Token Gated" />
+                                    <img src={ok} alt="Non-Token Gated" />
                                 </div>
                             </div>
                             <h3>Non-Token Gated Model</h3>
@@ -185,7 +216,7 @@ const Web2Retail = () => {
                         <div className="card">
                             <div className="card-icon">
                                 <div className="card-image">
-                                    <img src="assets/images/about/rocket.svg" alt="Rocket" />
+                                    <img src={rocket} alt="Rocket" />
                                 </div>
                             </div>
                             <h3>Superior Listings</h3>
@@ -199,7 +230,7 @@ const Web2Retail = () => {
                         <div className="card">
                             <div className="card-icon">
                                 <div className="card-image">
-                                    <img src="assets/images/about/roi.svg" alt="ROI" />
+                                    <img src={roi} alt="ROI" />
                                 </div>
                             </div>
                             <h3>Limitless Opening Day Volume</h3>
@@ -211,7 +242,7 @@ const Web2Retail = () => {
                         <div className="card">
                             <div className="card-icon">
                                 <div className="card-image">
-                                    <img src="assets/images/about/trading.svg" alt="Trading" />
+                                    <img src={trading} alt="Trading" />
                                 </div>
                             </div>
                             <h3>Zero Upfront Costs</h3>
@@ -221,20 +252,20 @@ const Web2Retail = () => {
                         </div>
                     </div>
                 </div>
-                <div className="featured-ape-quarterly container">
+                <div className="featured-ape-quarterly max-w-[1200px] container">
                     <div className="box-info-quarterly">
-                        <img src="assets/images/glow-green.png" alt="Glow Green" className="blurbackright blurrightgreen" />
+                        <img src={glowGreen} alt="Glow Green" className="blurbackright blurrightgreen" />
                         <div className="box-content">
                             <p>Quarterly <br />Launchpad Report</p>
-                            <span className="readmore"><a href="assets/docs/launchpad-report-web2-retail.pdf"><img src="assets/images/button-read-more.svg" alt="Read More" /></a></span>
+                            <span className="readmore"><a href="assets/docs/launchpad-report-web2-retail.pdf"><img src={readMore} alt="Read More" /></a></span>
                         </div>
                         <div className="image-quarterly">
-                            <img src="assets/images/about/image-quarterly.png" alt="Quarterly Report" />
+                            <img src={quarterly} alt="Quarterly Report" />
                         </div>
                     </div>
                 </div>
-                <div className="featured-ape-join-future container">
-                    <img src="assets/images/strong-apes-tgoether-background.png" alt="strong apes together" className="strongapes strongapes2" />
+                <div className="featured-ape-join-future max-w-[1200px] container">
+                    <img src={together} alt="strong apes together" className="strongapes  max-w-[200%]  strongapes2" />
                     <div className="box-text-join">
                         <h3>Start Your Crypto Journey Today</h3>
                         <p>Get started today with zero upfront costs today.</p>
@@ -242,39 +273,7 @@ const Web2Retail = () => {
                     </div>
                 </div>
 
-                <footer>
-                    <a href="https://apeterminal.io/" className="footerlogo"><img src="assets/images/logo.svg" alt="Ape Terminal" className="logo" /></a>
 
-                    <div className="footercon">
-                        <div className="footer3">
-                            <h2>Join our community</h2>
-                            <div className="socialscon">
-                                <a href="https://t.me/ApeTerminalChat" target="_blank" rel="noopener noreferrer"><img src="assets/images/socials/icon-telegram.svg" alt="Ape Terminal Telegram" /></a>
-                                <a href="https://twitter.com/apeterminal" target="_blank" rel="noopener noreferrer"><img src="assets/images/socials/icon-x.svg" alt="Ape Terminal X" /></a>
-                            </div>
-                        </div>
-                        <div className="footer2">
-                            <h2>Company</h2>
-                            <ul>
-                                <li><a href="https://apeterminal.io/faq">FAQ</a></li>
-                                <li><a href="https://app.apeterminal.io/">Yield App</a></li>
-                                <li><a href="https://www.apeterminal.io/transparency">Transparency</a></li>
-                            </ul>
-                        </div>
-                        <div className="footer1">
-                            <h2>Products</h2>
-                            <ul>
-                                <li><a href="#">Yield App</a></li>
-                                <li><a href="https://www.apearcade.gg/">Ape Arcade</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div className="footernote">
-                        <p><span className="footerleft">Ape Terminal © 2024. All rights reserved.</span> <span className="footerlinks"> <a href="https://www.apeterminal.io/terms-of-service"><span>Terms &amp; Conditions</span> <img src="assets/images/footer-arrow.svg" alt="footer arrow" /></a> <a href="https://www.apeterminal.io/privacy-policy"><span>Privacy Policy</span> <img src="assets/images/footer-arrow.svg" alt="footer arrow" /></a></span></p>
-                    </div>
-
-                </footer>
 
             </div>
         </div>

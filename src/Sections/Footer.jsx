@@ -1,13 +1,13 @@
 import React from 'react'
-
+import logo from '../assets/logo-footer.svg'
 const Footer = () => {
     return (
         <div className="MuiBox-root  css-gq8vch">
             <div className="MuiBox-root  css-xie4uy">
-                <div className="MuiBox-root  w-full css-p83gr0">
+                <div className="MuiBox-root   w-full css-p83gr0">
                     <div className="MuiBox-root css-18u4kf8">
                         <img
-                            src="/static/media/logo.b339e5e3413d1946881a319a8a8c45c4.svg"
+                            src={logo}
                             alt="Logo"
                             style={{ width: '33px', height: '32px', marginRight: 'auto' }}
                         />
@@ -131,46 +131,46 @@ const Footer = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="MuiBox-root  css-1j59682">
-                        <p className="MuiTypography-root MuiTypography-body1 css-330ygl">
-                            Ape Terminal © 2024 . All rights reserved.
-                        </p>
-                        <div className="MuiBox-root css-1q52k4u">
-                            <a
-                                className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1knjx35"
-                                href="/terms-of-service"
-                                target="_blank"
-                                rel="noopener noreferrer"
+                </div>
+                <div className="MuiBox-root   css-1j59682">
+                    <p className="MuiTypography-root MuiTypography-body1 css-330ygl">
+                        Ape Terminal © 2024 . All rights reserved.
+                    </p>
+                    <div className="MuiBox-root css-1q52k4u">
+                        <a
+                            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1knjx35"
+                            href="/terms-of-service"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Terms &amp; Conditions
+                            <svg
+                                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-ps9yb4"
+                                focusable="false"
+                                aria-hidden="true"
+                                viewBox="0 0 24 24"
+                                data-testid="SouthEastIcon"
                             >
-                                Terms &amp; Conditions
-                                <svg
-                                    className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-ps9yb4"
-                                    focusable="false"
-                                    aria-hidden="true"
-                                    viewBox="0 0 24 24"
-                                    data-testid="SouthEastIcon"
-                                >
-                                    <path d="M19 9h-2v6.59L5.41 4 4 5.41 15.59 17H9v2h10z"></path>
-                                </svg>
-                            </a>
-                            <a
-                                className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1vm6qjy"
-                                href="/privacy-policy"
-                                target="_blank"
-                                rel="noopener noreferrer"
+                                <path d="M19 9h-2v6.59L5.41 4 4 5.41 15.59 17H9v2h10z"></path>
+                            </svg>
+                        </a>
+                        <a
+                            className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1vm6qjy"
+                            href="/privacy-policy"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Privacy Policy
+                            <svg
+                                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-ps9yb4"
+                                focusable="false"
+                                aria-hidden="true"
+                                viewBox="0 0 24 24"
+                                data-testid="SouthEastIcon"
                             >
-                                Privacy Policy
-                                <svg
-                                    className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-ps9yb4"
-                                    focusable="false"
-                                    aria-hidden="true"
-                                    viewBox="0 0 24 24"
-                                    data-testid="SouthEastIcon"
-                                >
-                                    <path d="M19 9h-2v6.59L5.41 4 4 5.41 15.59 17H9v2h10z"></path>
-                                </svg>
-                            </a>
-                        </div>
+                                <path d="M19 9h-2v6.59L5.41 4 4 5.41 15.59 17H9v2h10z"></path>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>

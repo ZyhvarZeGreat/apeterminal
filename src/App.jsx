@@ -11,6 +11,8 @@ import Web2Insitutions from './Pages/Web2Insitutions'
 import Web2Retail from './Pages/Web2Retail'
 
 import { useLocation } from 'react-router-dom';
+import AboutFooter from './Sections/AboutFooter'
+import AboutHeader from './Sections/AboutHeader'
 
 
 function App() {
@@ -18,7 +20,9 @@ function App() {
   console.log(location.pathname)
   return (
     <div className='w-full font-hellix'>
-      {location.pathname === '/' && <Navbar />}
+      {(location.pathname === '/' || location.pathname === '/transparency') && <Navbar />}
+      {/* {(location.pathname !== '/' && location.pathname !== '/transparency') && <AboutHeader />} */}
+
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/transparency' element={<Transparency />} />
@@ -27,7 +31,8 @@ function App() {
         <Route path='/about/web2-institutions' element={<Web2Insitutions />} />
         <Route path='/about/web2-retail' element={<Web2Retail />} />
       </Routes>
-      {location.pathname === '/' && <Footer />}
+      {(location.pathname !== '/' && location.pathname !== '/transparency') && <AboutFooter />}
+      {(location.pathname === '/' || location.pathname === '/transparency') && <Footer />}
     </div>
   )
 }
