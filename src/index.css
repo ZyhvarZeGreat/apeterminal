@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Hellix';
+  src: url('./assets/hellix/Hellix-BoldItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Hellix';
+  src: url('./assets/hellix/Hellix-SemiBoldItalic.ttf');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Hellix';
+  src: url('./assets/hellix/Hellix-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hellix';
+  src: url('./assets/hellix/Hellix-LightItalic.ttf');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Hellix';
+  src: url('./assets/hellix/Hellix-MediumItalic.ttf');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Hellix';
+  src: url('./assets/hellix/Hellix-BlackItalic.ttf');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Hellix';
+  src: url('./assets/hellix/Hellix-RegularItalic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Hellix';
+  src: url('./assets/hellix/Hellix-ExtraBoldItalic.ttf');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Hellix';
+  src: url('./assets/hellix/Hellix-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hellix';
+  src: url('./assets/hellix/Hellix-BoldItalic.ttf');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Hellix';
+  src: url('./assets/hellix/Hellix-Light.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hellix';
+  src: url('./assets/hellix/Hellix-Thin.ttf');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hellix';
+  src: url('./assets/hellix/Hellix-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hellix';
+  src: url('./assets/hellix/Hellix-ExtraBold.ttf');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hellix';
+  src: url('./assets/hellix/Hellix-Black.ttf');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hellix';
+  src: url('./assets/hellix/Hellix-ThinItalic.ttf');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Hellix';
+  src: url('./assets/hellix/Hellix-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
