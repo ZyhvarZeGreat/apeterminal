@@ -6,29 +6,19 @@ const Stats = () => {
 
     const { rive: Roi, RiveComponent: RoiComponent } = useRive({
         src: "https://www.apeterminal.io/rive/ape_element_01-new.riv",
-        autoplay: true,
-        animations: ['BOX_01', 'I']
+        animations: ['BOX_01']
     });
     const { rive: participants, RiveComponent: ParticipantsComponent } = useRive({
         src: "https://www.apeterminal.io/rive/ape_element_02-new.riv",
-        autoplay: true
+        animations: ['BOX_02']
 
     });
 
     const { rive: totalAssets, RiveComponent: TotalAssetsComponent } = useRive({
         src: "https://www.apeterminal.io/rive/ape_element_03-new.riv",
-        autoplay: true,
-        animations: ['IDLE_BOX_03', 'BOX_ON_03', 'BOX_OFF_03']
+        animations: ['BOX_03_ON']
     });
-    const handleMouseEnter = (riveInstance) => {
-        console.log('Mouse Enter');
-        riveInstance && riveInstance.play();
-    };
 
-    const handleMouseLeave = (riveInstance) => {
-        console.log('Mouse Leave');
-        riveInstance && riveInstance.pause();
-    };
 
     return (
         <div className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-mjaphv">
@@ -41,8 +31,8 @@ const Stats = () => {
                         </div>
                         <div style={{ width: '100%', height: '100%' }}>
                             <RoiComponent
-                                onMouseEnter={() => handleMouseEnter(Roi)}
-                                onMouseLeave={() => handleMouseLeave(Roi)}
+                                onMouseEnter={() => Roi.play('BOX_01')}
+                                onMouseLeave={() => Roi.play('IDLE_BOX_01')}
                             />
                         </div>
                     </div>
@@ -53,8 +43,8 @@ const Stats = () => {
                         </div>
                         <div style={{ width: '100%', height: '100%' }}>
                             <ParticipantsComponent
-                                onMouseEnter={() => handleMouseEnter(participants)}
-                                onMouseLeave={() => handleMouseLeave(participants)} />
+                                onMouseEnter={() => participants.play('BOX_02')}
+                                onMouseLeave={() => participants.play('IDLE_BOX_02')} />
                         </div>
                     </div>
                     <div className="rive-animation__item" style={{ width: '100%', pointerEvents: 'auto', aspectRatio: '16 / 5', position: 'relative' }}>
@@ -65,8 +55,8 @@ const Stats = () => {
                         </div>
                         <div style={{ width: '100%', height: '100%' }}>
                             <TotalAssetsComponent
-                                onMouseEnter={() => handleMouseEnter(totalAssets)}
-                                onMouseLeave={() => handleMouseLeave(totalAssets)} />
+                                onMouseEnter={() => totalAssets.play('BOX_03_ON')}
+                                onMouseLeave={() => totalAssets.play('BOX_03_OFF')} />
                         </div>
                     </div>
                 </div>
