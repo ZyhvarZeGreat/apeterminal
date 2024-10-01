@@ -2,20 +2,12 @@ import React from 'react'
 import { useRive } from '@rive-app/react-canvas';
 const Stats = () => {
 
-    const handleMouseEnter = (riveInstance) => {
-        console.log('Mouse Enter');
-        riveInstance && riveInstance.play();
-    };
 
-    const handleMouseLeave = (riveInstance) => {
-        console.log('Mouse Leave');
-        riveInstance && riveInstance.pause();
-    };
 
     const { rive: Roi, RiveComponent: RoiComponent } = useRive({
         src: "https://www.apeterminal.io/rive/ape_element_01-new.riv",
-        autoplay: true
-
+        autoplay: true,
+        animations: ['BOX_01', 'I']
     });
     const { rive: participants, RiveComponent: ParticipantsComponent } = useRive({
         src: "https://www.apeterminal.io/rive/ape_element_02-new.riv",
@@ -25,9 +17,18 @@ const Stats = () => {
 
     const { rive: totalAssets, RiveComponent: TotalAssetsComponent } = useRive({
         src: "https://www.apeterminal.io/rive/ape_element_03-new.riv",
-        autoplay: true
-
+        autoplay: true,
+        animations: ['IDLE_BOX_03', 'BOX_ON_03', 'BOX_OFF_03']
     });
+    const handleMouseEnter = (riveInstance) => {
+        console.log('Mouse Enter');
+        riveInstance && riveInstance.play();
+    };
+
+    const handleMouseLeave = (riveInstance) => {
+        console.log('Mouse Leave');
+        riveInstance && riveInstance.pause();
+    };
 
     return (
         <div className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-mjaphv">

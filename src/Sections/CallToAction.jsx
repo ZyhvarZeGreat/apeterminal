@@ -6,7 +6,9 @@ const CallToAction = () => {
     const { rive, RiveComponent } = useRive({
         src: "https://www.apeterminal.io/rive/mavpa_floating.riv",
         autoplay: true,
-
+        animations: ['FLOATING_LIMBS', 'FLOATING'],
+        stateMachines: ['FLOATING_LIMBS', 'FLOATING'],
+        fit: 'cover'
     });
     return (
         <div className="MuiBox-root css-14crnjq">

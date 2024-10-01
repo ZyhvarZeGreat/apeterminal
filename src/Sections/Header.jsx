@@ -7,7 +7,7 @@ const Header = () => {
     const [blurHeader, setBlurHeader] = useState(true)
     const { rive, RiveComponent } = useRive({
         src: "https://www.apeterminal.io/rive/grid_header_ape.riv",
-        stateMachines: "bumpy",
+        animations: ['LINES_LOOP'],
         autoplay: true,
     });
 
