@@ -12,28 +12,38 @@ import Web2Retail from './Pages/Web2Retail'
 
 import { useLocation } from 'react-router-dom';
 import AboutFooter from './Sections/AboutFooter'
-import AboutHeader from './Sections/AboutHeader'
+import { useAccount } from 'wagmi'
 
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import WalletModal from './Sections/WalletModal'
 
 function App() {
+  const queryClient = new QueryClient();
   const location = useLocation();
-  console.log(location.pathname)
+  const { address } = useAccount()
   return (
-    <div className='w-full font-hellix'>
-      {(location.pathname === '/' || location.pathname === '/transparency') && <Navbar />}
-      {/* {(location.pathname !== '/' && location.pathname !== '/transparency') && <AboutHeader />} */}
+    <>
+      <QueryClientProvider client={queryClient}>
+        <div className='w-full relative font-hellix'>
 
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/transparency' element={<Transparency />} />
-        <Route path='/activator' element={<Activator />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/about/web2-institutions' element={<Web2Insitutions />} />
-        <Route path='/about/web2-retail' element={<Web2Retail />} />
-      </Routes>
-      {(location.pathname !== '/' && location.pathname !== '/transparency') && <AboutFooter />}
-      {(location.pathname === '/' || location.pathname === '/transparency') && <Footer />}
-    </div>
+          {(location.pathname === '/' || location.pathname === '/transparency') && <Navbar />}
+          {/* {(location.pathname !== '/' && location.pathname !== '/transparency') && <AboutHeader />} */}
+
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/transparency' element={<Transparency />} />
+            <Route path='/activator' element={<Activator />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/about/web2-institutions' element={<Web2Insitutions />} />
+            <Route path='/about/web2-retail' element={<Web2Retail />} />
+          </Routes>
+          {(location.pathname !== '/' && location.pathname !== '/transparency') && <AboutFooter />}
+          {(location.pathname === '/' || location.pathname === '/transparency') && <Footer />}
+          {address ? <WalletModal /> : null}
+        </div>
+      </QueryClientProvider>
+    </>
+
   )
 }
 

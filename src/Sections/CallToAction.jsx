@@ -11,8 +11,8 @@ const CallToAction = () => {
     return (
         <div className="MuiBox-root css-14crnjq">
             <div className="MuiBox-root css-1me5gi6">
-                <p className="MuiTypography-root MuiTypography-body1 css-r881ud">Launch on Ape Terminal</p>
-                <p className="MuiTypography-root MuiTypography-body1 css-1e7cib9">Don’t miss the chance and super-<br />charge your IDO launch!</p>
+                <p className="MuiTypography-root MuiTypography-body1 css-r881ud lg:text-start">Launch on Ape Terminal</p>
+                <p className="MuiTypography-root MuiTypography-body1 css-1e7cib9 lg:text-start">Don’t miss the chance and super-<br />charge your IDO launch!</p>
                 <div className="MuiBox-root css-1age63q">
                     <button className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-73ldr1" tabIndex="0" type="button">
                         <img src={ctaArrow} alt="apply-icon" style={{ marginRight: '8px' }} />
